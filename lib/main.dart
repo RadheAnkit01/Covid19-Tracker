@@ -32,6 +32,10 @@ class MyApp extends StatelessWidget {
             EdgeInsetsGeometry.symmetric(vertical: 5, horizontal: 20),
           ),
         ),
+        appBarTheme: AppBarThemeData(
+          backgroundColor: Colors.deepPurpleAccent,
+          foregroundColor: Colors.white,
+        ),
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
@@ -51,6 +55,10 @@ class MyApp extends StatelessWidget {
           padding: WidgetStatePropertyAll(
             EdgeInsetsGeometry.symmetric(vertical: 5, horizontal: 20),
           ),
+        ),
+        appBarTheme: AppBarThemeData(
+          backgroundColor: const Color.fromARGB(255, 89, 35, 181),
+          foregroundColor: Colors.white,
         ),
       ),
       home: const SplashScreen(),
