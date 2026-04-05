@@ -25,6 +25,13 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
+        searchBarTheme: SearchBarThemeData(
+          elevation: WidgetStatePropertyAll(1),
+          side: WidgetStatePropertyAll(BorderSide(color: Colors.black)),
+          padding: WidgetStatePropertyAll(
+            EdgeInsetsGeometry.symmetric(vertical: 5, horizontal: 20),
+          ),
+        ),
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
@@ -36,6 +43,13 @@ class MyApp extends StatelessWidget {
               MediaQuery.maybeOf(context)!.size.width * .9,
               MediaQuery.maybeOf(context)!.size.height * .05,
             ),
+          ),
+        ),
+        searchBarTheme: SearchBarThemeData(
+          elevation: WidgetStatePropertyAll(1),
+          side: WidgetStatePropertyAll(BorderSide(color: Colors.white)),
+          padding: WidgetStatePropertyAll(
+            EdgeInsetsGeometry.symmetric(vertical: 5, horizontal: 20),
           ),
         ),
       ),

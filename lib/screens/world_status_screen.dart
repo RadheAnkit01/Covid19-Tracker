@@ -60,7 +60,7 @@ class _WorldStatusState extends State<WorldStatus>
                           ),
                         );
                       }
-                      print(snapshot.data);
+                      // print(snapshot.data);
                       return Column(
                         children: [
                           PieChart(

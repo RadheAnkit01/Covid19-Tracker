@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:covid19_tracker/screens/world_status.dart';
+import 'package:covid19_tracker/screens/world_status_screen.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
