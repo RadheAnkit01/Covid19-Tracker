@@ -13,8 +13,28 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      darkTheme: ThemeData(brightness: Brightness.dark),
+      theme: ThemeData(
+        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue,
+            foregroundColor: Colors.white,
+          ),
+        ),
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(255, 0, 88, 164),
+            foregroundColor: Colors.white,
+            fixedSize: Size(
+              MediaQuery.maybeOf(context)!.size.width * .9,
+              MediaQuery.maybeOf(context)!.size.height * .05,
+            ),
+          ),
+        ),
+      ),
       home: const SplashScreen(),
     );
   }

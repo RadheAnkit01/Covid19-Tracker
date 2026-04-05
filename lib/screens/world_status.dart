@@ -60,6 +60,14 @@ class _WorldStatusState extends State<WorldStatus>
                   ),
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(),
+                  onPressed: () {},
+                  child: Text('Track Countries'),
+                ),
+              ),
             ],
           ),
         ),
