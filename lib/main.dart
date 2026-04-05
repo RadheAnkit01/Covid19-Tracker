@@ -19,6 +19,10 @@ class MyApp extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.blue,
             foregroundColor: Colors.white,
+            fixedSize: Size(
+              MediaQuery.maybeOf(context)!.size.width * .9,
+              MediaQuery.maybeOf(context)!.size.height * .05,
+            ),
           ),
         ),
       ),

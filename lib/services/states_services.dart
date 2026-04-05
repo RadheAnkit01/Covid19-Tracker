@@ -10,6 +10,7 @@ class StatesServices {
           .timeout(const Duration(seconds: 10));
 
       if (response.statusCode == 200) {
+        // print(response.body);
         return worldStatesModelFromJson(response.body);
       } else {
         throw Exception('Server error: ${response.statusCode}');
